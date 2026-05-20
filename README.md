@@ -1,8 +1,28 @@
+# Java Shopping Microservices Deployment using Docker & Kubernetes
 
-# docker-Java-kubernetes-project
-Deploying Java Applications with Docker and Kubernetes
+## Tech Stack
+- Java
+- Maven
+- Docker
+- Kubernetes
+- Docker Desktop Kubernetes
 
-Credit: https://github.com/danielbryantuk/oreilly-docker-java-shopping/
-=======
-# java-shopping
->>>>>>> 23c33a3b50a66d96f8279fc8c4f94acdac2e64a3
+## Services
+- Shopfront
+- Product Catalogue
+- Stock Manager
+
+## Docker Images
+- saketh125/shopfront:latest
+- saketh125/productcatalogue:latest
+- saketh125/stockmanager:latest
+
+## Kubernetes Deployment
+kubectl apply -f shopfront-service.yaml
+kubectl apply -f productcatalogue-service.yaml
+kubectl apply -f stockmanager-service.yaml
+
+## Features
+- Containerized microservices deployment
+- Kubernetes orchestration
+- Service exposure using NodePort
